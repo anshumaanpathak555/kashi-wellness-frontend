@@ -23,7 +23,8 @@ export default function CartDrawer() {
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetContent
         side="right"
-        className="bg-ivory border-l border-border w-full sm:max-w-md p-0 flex flex-col"
+        className="border-l border-border w-full sm:max-w-md p-0 flex flex-col"
+        style={{ backgroundColor: "hsl(40, 33%, 98%)" }}
         data-testid="cart-drawer"
       >
         <SheetHeader className="px-6 py-5 border-b border-border">
