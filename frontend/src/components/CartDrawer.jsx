@@ -3,6 +3,7 @@ import {
   SheetContent,
   SheetHeader,
   SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
 import { useCart } from "@/context/CartContext";
 import { Minus, Plus, X, ShoppingBag } from "lucide-react";
@@ -32,6 +33,9 @@ export default function CartDrawer() {
               {count} {count === 1 ? "item" : "items"}
             </span>
           </SheetTitle>
+          <SheetDescription className="sr-only">
+            Review the products in your ritual before proceeding to checkout.
+          </SheetDescription>
         </SheetHeader>
 
         <div className="flex-1 overflow-y-auto px-6 py-6">
