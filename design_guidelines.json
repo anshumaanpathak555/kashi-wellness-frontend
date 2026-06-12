@@ -1,0 +1,183 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy) blended with 5 (Luxury)",
+  "brand_name": "Kashi Wellness",
+  "design_philosophy": "A premium Ayurvedic D2C wellness brand inspired by Kashi. The aesthetic blends the grounded, organic nature of Ayurveda with a cinematic, moody, and expensive feel. Emphasize white/ivory negative space, delicate gold hairlines, and refined typography. Avoid generic e-commerce layouts, heavy gradients, or cheap dropshipping aesthetics.",
+  "colors": {
+    "background": {
+      "primary": "hsl(40, 33%, 98%)",
+      "secondary": "hsl(40, 42%, 93%)"
+    },
+    "text": {
+      "primary": "hsl(160, 35%, 16%)",
+      "secondary": "hsl(148, 27%, 24%)",
+      "accent": "hsl(40, 50%, 56%)"
+    },
+    "brand": {
+      "primary": "hsl(148, 27%, 24%)",
+      "secondary": "hsl(24, 62%, 60%)",
+      "accent": "hsl(40, 50%, 56%)"
+    },
+    "surface": {
+      "card": "hsl(0, 0%, 100%)",
+      "drawer": "hsl(40, 33%, 98%)"
+    },
+    "border": {
+      "light": "hsl(40, 20%, 85%)",
+      "gold": "hsl(40, 50%, 56%)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond, serif",
+      "body": "Manrope, sans-serif",
+      "accent": "Playfair Display, serif"
+    },
+    "scale": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl font-light tracking-tight text-primary",
+      "h2": "text-4xl sm:text-5xl font-light tracking-tight text-primary",
+      "h3": "text-2xl sm:text-3xl font-light text-primary",
+      "h4": "text-xl font-medium tracking-wide text-primary uppercase",
+      "body_large": "text-lg text-secondary leading-relaxed",
+      "body_base": "text-base text-secondary leading-relaxed",
+      "body_small": "text-sm text-secondary uppercase tracking-widest",
+      "overline": "text-xs font-semibold tracking-[0.2em] uppercase text-accent"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-24 sm:py-32",
+    "element_gap": "gap-8 md:gap-12",
+    "border_radius": {
+      "button": "rounded-none",
+      "card": "rounded-2xl",
+      "image": "rounded-sm"
+    }
+  },
+  "media": {
+    "products": {
+      "veda": "https://customer-assets.emergentagent.com/job_2ed6455a-939b-4454-bf51-73c5f3ebe46b/artifacts/dmqp55rh_veda.png",
+      "charak": "https://customer-assets.emergentagent.com/job_2ed6455a-939b-4454-bf51-73c5f3ebe46b/artifacts/qlp63vq5_charak.png",
+      "combo": "https://customer-assets.emergentagent.com/job_2ed6455a-939b-4454-bf51-73c5f3ebe46b/artifacts/wv0o7ep8_bundle.png"
+    },
+    "editorial": {
+      "founder": "https://customer-assets.emergentagent.com/job_2ed6455a-939b-4454-bf51-73c5f3ebe46b/artifacts/ubuagf4l_a_serene_high_end_lifestyle_photograph_of_an_indian_woman_in_her_late_40s_or.png",
+      "varanasi_ghats": "https://images.pexels.com/photos/12112985/pexels-photo-12112985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "varanasi_river": "https://images.pexels.com/photos/34322182/pexels-photo-34322182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    },
+    "ingredients": {
+      "eucalyptus": "https://images.pexels.com/photos/6168330/pexels-photo-6168330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "turmeric": "https://images.pexels.com/photos/1340116/pexels-photo-1340116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "peppermint": "https://images.pexels.com/photos/16231471/pexels-photo-16231471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "mortar_pestle": "https://images.pexels.com/photos/4199043/pexels-photo-4199043.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    }
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero Section",
+      "description": "Showcase VEDA + CHARAK COMBO. Headline: 'Ancient Ayurvedic Wisdom. Modern Daily Wellness.'",
+      "components": ["HeroImage", "Headline", "PrimaryCTA", "SecondaryCTA"],
+      "instructions": "Use a split-screen or an asymmetrical bento grid. The combo product image must be large and high-quality. Apply subtle zoom-in animation on the image. Background should be Warm Ivory."
+    },
+    {
+      "id": "trust_bar",
+      "name": "Trust Bar",
+      "description": "Logos and icons highlighting: Premium Quality, Inspired by Ayurveda, Secure Checkout, Customer Satisfaction",
+      "instructions": "A thin, elegant strip just below the hero. Use gold/accent hairlines to separate items. Font should be small, all-caps, widely tracked (overline style)."
+    },
+    {
+      "id": "storytelling",
+      "name": "Why Kashi Wellness",
+      "description": "Brand story emphasizing the connection to ancient Kashi.",
+      "instructions": "Editorial layout. Use the Varanasi ghats image alongside refined serif typography. Lots of negative space. Animate text fade-up on scroll."
+    },
+    {
+      "id": "featured_products",
+      "name": "Featured Products",
+      "description": "Cards for VEDA (₹599), CHARAK (₹599), and COMBO (₹999).",
+      "instructions": "Cards should not look like standard Shopify blocks. Use borders, no heavy shadows. Background of cards in Soft Cream. Hover effect shows 'Quick Add' button."
+    },
+    {
+      "id": "benefits",
+      "name": "Benefits Showcase",
+      "description": "Iconography highlighting the fast-acting and deep relief benefits.",
+      "instructions": "Use minimalist SVG line icons (Phosphor or Lucide). Layout should be a 3 or 4-column grid with subtle dividers."
+    },
+    {
+      "id": "ingredients",
+      "name": "Interactive Ingredient Story",
+      "description": "Highlighting Turmeric, Eucalyptus, Peppermint, etc.",
+      "instructions": "Clickable or hoverable tabs/cards that reveal the benefit, Ayurvedic significance, and modern explanation. Use the ingredient photos provided. Background should be Earthy Sandstone or Deep Forest Green for contrast."
+    },
+    {
+      "id": "transformation",
+      "name": "Transformation Journey",
+      "description": "Visual timeline: Problem -> Daily struggle -> Ayurvedic support -> Consistency -> Improved lifestyle.",
+      "instructions": "A vertical or horizontal timeline using elegant gold connecting lines. Minimal text, high-impact visuals."
+    },
+    {
+      "id": "trust",
+      "name": "Why Customers Trust Us",
+      "description": "Quality standards, sourcing, manufacturing, philosophy.",
+      "instructions": "Use the Mortar & Pestle image. Darker background (Deep Forest Green) with Warm Ivory text for a premium feel."
+    },
+    {
+      "id": "comparison",
+      "name": "Product Comparison",
+      "description": "Table comparing VEDA, CHARAK, and COMBO.",
+      "instructions": "Minimalist table, no heavy grid lines. Use checkmarks (gold) and crossmarks. Focus on the COMBO being the best value."
+    },
+    {
+      "id": "testimonials",
+      "name": "Testimonials",
+      "description": "Video placeholders and review cards.",
+      "instructions": "Masonry or slider layout. Give it a very editorial look, like quotes in a luxury magazine. Use large stylized quotation marks."
+    },
+    {
+      "id": "editorial",
+      "name": "Ayurveda Meets Modern Science",
+      "description": "Editorial section.",
+      "instructions": "Overlap text and imagery. Parallax scrolling effect on images."
+    },
+    {
+      "id": "founder",
+      "name": "Founder Story",
+      "description": "Message from the founder.",
+      "instructions": "Use the founder image. Layout like a magazine letter-from-the-editor. Include a stylized signature."
+    },
+    {
+      "id": "combo_offer",
+      "name": "Combo Offer Hero",
+      "description": "Highest conversion section for the VEDA + CHARAK COMBO.",
+      "instructions": "Full width, high contrast, clear CTA. Showcase the COMBO image prominently."
+    },
+    {
+      "id": "faq",
+      "name": "FAQ",
+      "description": "Accordion for FAQs.",
+      "instructions": "Use Shadcn accordion. Thin borders. Open/close animation."
+    },
+    {
+      "id": "blog",
+      "name": "Journal/Blog",
+      "description": "4 sample cards for categories: Ayurveda, Wellness, Lifestyle, Ingredients.",
+      "instructions": "Grid layout. Images should zoom on hover. Titles in Serif font."
+    },
+    {
+      "id": "footer",
+      "name": "Luxury Footer",
+      "description": "Newsletter, social, policies, legal pages.",
+      "instructions": "Generous padding. Large elegant typography for the newsletter signup. Links in small, tracked-out sans-serif."
+    }
+  ],
+  "components": {
+    "cart_drawer": "Slide-in cart drawer using Shadcn Sheet. Visual demo only. Must have a premium feel, list added items, and a checkout button.",
+    "buttons": "Square or slight rounding (rounded-sm). Dark Green background with Ivory text, or Gold outline. Hover: slight lift and color shift. Use group-hover for internal icon movements.",
+    "inputs": "Underline only or very subtle border (border-border). No heavy boxes."
+  },
+  "testing": {
+    "attributes": "All interactive elements MUST include data-testid. Example: data-testid='add-to-cart-combo', data-testid='shop-collection-hero-cta'."
+  },
+  "instructions_to_main_agent": "Ensure the application is mobile-first. Do not use Inter or generic fonts; implement Cormorant Garamond for headings and Manrope for body. Follow the HSL color tokens rigorously by setting them in tailwind.config.js or globals.css. Avoid typical e-commerce card looks—prioritize flat layouts with elegant thin borders, plenty of negative space, and typographic hierarchy. The cart is purely visual (frontend-only). Do not add a real backend. Build the 16 sections meticulously as defined."
+}
