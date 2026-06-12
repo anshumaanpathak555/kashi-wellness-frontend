@@ -9,7 +9,6 @@ import TrustSection from "@/components/sections/TrustSection";
 import Comparison from "@/components/sections/Comparison";
 import Testimonials from "@/components/sections/Testimonials";
 import Editorial from "@/components/sections/Editorial";
-import Founder from "@/components/sections/Founder";
 import ComboOffer from "@/components/sections/ComboOffer";
 import FAQ from "@/components/sections/FAQ";
 import Journal from "@/components/sections/Journal";
@@ -28,7 +27,6 @@ export default function HomePage() {
       <Comparison />
       <Testimonials />
       <Editorial />
-      <Founder />
       <ComboOffer />
       <FAQ />
       <Journal />

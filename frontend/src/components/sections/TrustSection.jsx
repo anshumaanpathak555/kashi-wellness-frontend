@@ -13,13 +13,6 @@ export default function TrustSection() {
       data-testid="trust-section"
       className="py-24 lg:py-32 bg-forest text-ivory relative overflow-hidden"
     >
-      <div className="absolute inset-0 opacity-30 mix-blend-overlay pointer-events-none">
-        <img
-          src="https://images.pexels.com/photos/4199043/pexels-photo-4199043.jpeg?auto=compress&cs=tinysrgb&w=1600"
-          alt=""
-          className="w-full h-full object-cover"
-        />
-      </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20">
           <div className="lg:col-span-5">
