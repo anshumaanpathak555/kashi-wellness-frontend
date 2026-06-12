@@ -1,6 +1,6 @@
 import { Check, Minus } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
-import { useCart } from "@/context/CartContext";
+import { PRODUCT_LINKS } from "@/lib/productLinks";
 
 const ROWS = [
   { label: "Fast acting cooling relief", veda: true, charak: false, combo: true },
@@ -21,8 +21,6 @@ const Cell = ({ value }) =>
   );
 
 export default function Comparison() {
-  const { addItem } = useCart();
-
   return (
     <section
       data-testid="comparison-section"
@@ -77,31 +75,31 @@ export default function Comparison() {
                 <tr>
                   <td className="p-4 lg:p-6"></td>
                   <td className="p-4 lg:p-6 text-center">
-                    <button
+                    <a
+                      href={PRODUCT_LINKS.veda}
                       data-testid="comparison-cta-veda"
-                      onClick={() => addItem(PRODUCTS.veda)}
                       className="btn-outline text-xs"
                     >
-                      Add Veda
-                    </button>
+                      Shop Veda
+                    </a>
                   </td>
                   <td className="p-4 lg:p-6 text-center">
-                    <button
+                    <a
+                      href={PRODUCT_LINKS.charak}
                       data-testid="comparison-cta-charak"
-                      onClick={() => addItem(PRODUCTS.charak)}
                       className="btn-outline text-xs"
                     >
-                      Add Charak
-                    </button>
+                      Shop Charak
+                    </a>
                   </td>
                   <td className="p-4 lg:p-6 text-center bg-cream/60">
-                    <button
+                    <a
+                      href={PRODUCT_LINKS.combo}
                       data-testid="comparison-cta-combo"
-                      onClick={() => addItem(PRODUCTS.combo)}
                       className="btn-gold text-xs"
                     >
-                      Add Combo
-                    </button>
+                      Shop Combo
+                    </a>
                   </td>
                 </tr>
               </tbody>

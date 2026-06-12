@@ -1,6 +1,6 @@
 import { Check, ArrowRight } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
-import { useCart } from "@/context/CartContext";
+import { PRODUCT_LINKS } from "@/lib/productLinks";
 
 const POINTS = [
   "Two complete daily rituals — morning Veda, evening Charak",
@@ -10,7 +10,6 @@ const POINTS = [
 ];
 
 export default function ComboOffer() {
-  const { addItem } = useCart();
   const combo = PRODUCTS.combo;
 
   return (
@@ -71,13 +70,13 @@ export default function ComboOffer() {
                   <p className="text-lg text-ivory/40 line-through">₹{combo.mrp}</p>
                 </div>
               </div>
-              <button
+              <a
+                href={PRODUCT_LINKS.combo}
                 data-testid="combo-offer-cta"
-                onClick={() => addItem(combo)}
                 className="btn-gold"
               >
-                Add Combo to Ritual <ArrowRight size={14} />
-              </button>
+                Shop the Bundle <ArrowRight size={14} />
+              </a>
             </div>
 
             <p className="mt-6 overline text-ivory/40">

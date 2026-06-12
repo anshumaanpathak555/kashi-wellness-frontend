@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Instagram, Facebook, Youtube, Mail } from "lucide-react";
 import { toast } from "sonner";
 import { useState } from "react";
+import { PRODUCT_LINKS } from "@/lib/productLinks";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
@@ -96,9 +97,9 @@ export default function Footer() {
           <div>
             <p className="overline text-gold mb-5">Shop</p>
             <ul className="space-y-3 text-sm text-ivory/70">
-              <li><a href="/#products" className="hover:text-gold">VEDA</a></li>
-              <li><a href="/#products" className="hover:text-gold">CHARAK</a></li>
-              <li><a href="/#combo-offer" className="hover:text-gold">Veda + Charak Combo</a></li>
+              <li><a href={PRODUCT_LINKS.veda} className="hover:text-gold">VEDA</a></li>
+              <li><a href={PRODUCT_LINKS.charak} className="hover:text-gold">CHARAK</a></li>
+              <li><a href={PRODUCT_LINKS.combo} className="hover:text-gold">Veda + Charak Combo</a></li>
               <li><a href="/#ingredients" className="hover:text-gold">Ingredients</a></li>
             </ul>
           </div>

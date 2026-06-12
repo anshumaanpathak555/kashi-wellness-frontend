@@ -7,16 +7,22 @@ import {
 } from "@/components/ui/sheet";
 import { useCart } from "@/context/CartContext";
 import { Minus, Plus, X, ShoppingBag } from "lucide-react";
-import { toast } from "sonner";
+import { PRODUCT_LINKS, getProductLink } from "@/lib/productLinks";
 
 export default function CartDrawer() {
   const { items, open, setOpen, removeItem, updateQty, subtotal, count } =
     useCart();
 
   const checkout = () => {
-    toast("Checkout is coming soon", {
-      description: "This boutique storefront will connect to Shopify checkout shortly.",
-    });
+    // Build a Shopify checkout URL based on cart items.
+    // If the cart has exactly one product type, go to that product page.
+    // Otherwise, go to the main Shopify storefront.
+    const uniqueIds = [...new Set(items.map((i) => i.id))];
+    const destination =
+      uniqueIds.length === 1
+        ? getProductLink(uniqueIds[0])
+        : PRODUCT_LINKS.store;
+    window.location.href = destination;
   };
 
   return (
@@ -54,13 +60,14 @@ export default function CartDrawer() {
               <p className="text-sm text-muted-foreground max-w-xs">
                 Begin with the Veda + Charak duo — our most loved daily wellness pairing.
               </p>
-              <button
+              <a
+                href="/#products"
                 data-testid="cart-empty-shop-btn"
                 onClick={() => setOpen(false)}
                 className="btn-primary mt-8"
               >
                 Discover Products
-              </button>
+              </a>
             </div>
           ) : (
             <ul className="space-y-6">

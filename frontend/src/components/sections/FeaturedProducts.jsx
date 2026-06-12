@@ -1,10 +1,8 @@
 import { Plus, Star } from "lucide-react";
 import { PRODUCT_LIST } from "@/lib/products";
-import { useCart } from "@/context/CartContext";
+import { getProductLink } from "@/lib/productLinks";
 
 export default function FeaturedProducts() {
-  const { addItem } = useCart();
-
   return (
     <section
       id="products"
@@ -30,13 +28,15 @@ export default function FeaturedProducts() {
         <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
           {PRODUCT_LIST.map((p, idx) => {
             const isCombo = p.id === "combo";
+            const shopifyUrl = getProductLink(p.id);
             return (
               <article
                 key={p.id}
                 data-testid={`product-card-${p.id}`}
+                onClick={() => { window.location.href = shopifyUrl; }}
                 className={`group relative bg-ivory border ${
                   isCombo ? "border-gold" : "border-border"
-                } flex flex-col`}
+                } flex flex-col cursor-pointer`}
               >
                 {isCombo && (
                   <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-forest overline px-4 py-1.5 z-10 whitespace-nowrap">
@@ -50,13 +50,14 @@ export default function FeaturedProducts() {
                     alt={p.name}
                     className="w-full h-full object-contain p-6 transition-transform duration-700 group-hover:scale-105"
                   />
-                  <button
+                  <a
+                    href={shopifyUrl}
                     data-testid={`quick-add-${p.id}`}
-                    onClick={() => addItem(p)}
-                    className="absolute inset-x-4 bottom-4 bg-forest text-ivory overline py-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 flex items-center justify-center gap-2"
+                    onClick={(e) => e.stopPropagation()}
+                    className="absolute inset-x-4 bottom-4 bg-forest text-ivory overline py-3 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 flex items-center justify-center gap-2 transition-all duration-300"
                   >
                     <Plus size={14} /> Quick Add
-                  </button>
+                  </a>
                 </div>
 
                 <div className="p-6 flex-1 flex flex-col">
@@ -89,13 +90,14 @@ export default function FeaturedProducts() {
                         </p>
                       </div>
                     </div>
-                    <button
+                    <a
+                      href={shopifyUrl}
                       data-testid={`add-to-cart-${p.id}`}
-                      onClick={() => addItem(p)}
+                      onClick={(e) => e.stopPropagation()}
                       className={isCombo ? "btn-gold" : "btn-primary"}
                     >
-                      Add
-                    </button>
+                      Shop Now
+                    </a>
                   </div>
                 </div>
               </article>

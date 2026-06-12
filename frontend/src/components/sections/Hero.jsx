@@ -1,9 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { PRODUCTS } from "@/lib/products";
-import { useCart } from "@/context/CartContext";
+import { PRODUCT_LINKS } from "@/lib/productLinks";
 
 export default function Hero() {
-  const { addItem } = useCart();
   const combo = PRODUCTS.combo;
 
   return (
@@ -39,13 +38,13 @@ export default function Hero() {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 animate-fade-up delay-3">
-              <button
+              <a
+                href={PRODUCT_LINKS.combo}
                 data-testid="hero-shop-collection-btn"
-                onClick={() => addItem(combo)}
                 className="btn-primary"
               >
                 Shop Collection <ArrowRight size={14} />
-              </button>
+              </a>
               <a
                 href="#story"
                 data-testid="hero-learn-story-btn"
